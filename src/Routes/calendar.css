@@ -1,0 +1,95 @@
+#root {
+  height: 100%;
+}
+.calendar-header {
+  color: white;
+  background-color: #f2939b;
+}
+
+.content-width {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.move-month-btn {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  padding: 2rem;
+  color: white;
+}
+
+.move-month-btn:hover {
+  background-color: #e66f79;
+}
+
+.calendar-container {
+  min-width: 560px;
+  background-color: #f8f7f4;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.date:hover {
+  border: 3px solid #f2939b;
+  padding: 7px;
+}
+
+.date:active {
+  background-color: #ccd7d1;
+  border: none;
+  padding: 10px;
+}
+
+.date,
+.day {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  padding: 10px;
+  color: #785658;
+  text-decoration: none;
+}
+
+.day {
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  color: #785658;
+}
+
+.days {
+  display: flex;
+  font-weight: bold;
+}
+
+.day:nth-child(1),
+.date:nth-child(7n + 1) {
+  color: #f2939b;
+}
+
+.day:nth-child(7),
+.date:nth-child(7n) {
+  color: rgb(83, 83, 202);
+}
+
+.dates {
+  width: 560px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dates .prev,
+.dates .next {
+  color: rgb(206, 206, 206);
+  font-weight: lighter;
+}
+
+.today {
+  background-color: #f2939b85;
+  padding: 10px;
+  color: white;
+}
