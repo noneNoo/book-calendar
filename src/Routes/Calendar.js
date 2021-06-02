@@ -2,6 +2,7 @@ import React from 'react';
 import './calendar.css';
 
 import DateDiv from '../Components/DateDiv';
+import BookAddBtn from '../Components/BookAddBtn';
 
 class Calendar extends React.Component {
   constructor(props) {
@@ -188,6 +189,7 @@ class Calendar extends React.Component {
             })}
           </div>
         </div>
+        <BookAddBtn></BookAddBtn>
       </div>
     );
   }

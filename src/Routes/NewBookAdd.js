@@ -10,6 +10,7 @@ class NewBookAdd extends React.Component {
       year: '',
       month: '',
       date: '',
+      thisDateBooks: [],
     };
   }
 
@@ -55,10 +56,7 @@ class NewBookAdd extends React.Component {
   }
 
   render() {
-    const { year, month, date } = this.state;
-
-    console.log(this.state);
-
+    const { year, month, date, thisDateBooks } = this.state;
     return (
       <div id="container">
         <header>
@@ -66,6 +64,11 @@ class NewBookAdd extends React.Component {
           <h3 id="this-date">
             {year}.{month}.{date}
           </h3>
+          {thisDateBooks.length ? (
+            <h2>{thisDateBooks}</h2>
+          ) : (
+            <h2>아직 이날 책을 기록하지 않았어요</h2>
+          )}
         </header>
       </div>
     );
